@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+        .navbar-brand{
+            font-weight: bold;
+            font-family: 'Lexend Zetta', sans-serif;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            height: 100vh;
+            background-image: url(https://unsplash.com/photos/LnJuroAQnfU/download?force=true&w=2400);
+            background-size: cover; /* 盡可能的填滿空間 */
+            background-position: center center; /* 顯示圖片的中央部分 */
+            background-attachment: fixed; /* 背景圖固定 */
+        }
+        .container-fluid{
+            /*border: 3px solid black;*/
+            height: 100%;
+        }
+        .navbar{
+            background:rgba(0,0,0, 0);
+            /*border: 1px solid red;*/
+            width: 100%;
+        }
+        .collapse{
+            width: 100%;
+            /*border: 1px solid purple;*/
+            justify-content: end;
+        }
+        .row2{
+            /*border: 1px solid white;*/
+            height: 100%;
+            font-family: 'Indie Flower', cursive;
+        }
+        ul.navbar-nav{
+            font-family: 'Shadows Into Light', cursive;
+            letter-spacing: 2px;
+        }
+        .sec1{
+            height: 3vh;
+        }
+        a#dropdownId::after{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="header">
+    <div class="container-fluid">
+        <div class="row row1">
+            <nav class="navbar navbar-expand-sm navbar-light d-flex fixed-top">
+                <div class="col-md-2 text-center">
+                    <a class="navbar-brand" href="#"><font color="white">MODERNA</font></a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-md-10 text-center">
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item active ">
+                                        <a class="nav-link" href="#"><font color="white">Home</font> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#"><font color="white">About Us</font></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#"><font color="white">Services</font></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#"><font color="white">Portfolio</font></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#"><font color="white">Team</font></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#"><font color="white">Blog</font></a>
+                                    </li>
+                                </div>
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font color="white">Dropdown</font></a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">Action 1</a>
+                                            <a class="dropdown-item" href="#">Action 2</a>
+                                        </div>
+                                    </li>
+                                </div>
+    
+                                <div class="col-sm-4 col-lg-1 col-md-2 ml-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><font color="white">Contact Us</font></a>
+                                    </li>
+                                </div>
+                                
+                            </div>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+        <div class="row row2 d-flex justify-content-center align-items-center">
+            <div>
+                <h1>MODERNA TEMPLATE</h1><br>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</section>
+<section class="sec1">
+
+</section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
